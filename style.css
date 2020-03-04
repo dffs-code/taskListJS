@@ -31,10 +31,10 @@ footer{
     text-align: center;
     color: black;
 }
-div#input, #principal, #delete{
+div#input, #main, #delete{
     text-align: center;
 }
-button{
+button#insert{
     font-family: 'Raleway','Roboto', sans-serif;
     width: auto;
     height: auto;
