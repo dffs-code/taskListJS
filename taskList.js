@@ -27,17 +27,8 @@ function insertTask(){
 
     //atribuindo childs
     li.appendChild(checkbox);
-    if(inputElement.value.length >=27){
-        var init = inputElement.value.slice(0,26) 
-        var sub = inputElement.value.slice(26)
-        li.appendChild(document.createTextNode(init + "-"))
-        li.appendChild(document.createElement("br"))
-        li.appendChild(document.createTextNode(sub))
-        ul.appendChild(li)
-    }else{
-        li.appendChild(document.createTextNode(inputElement.value))
-        ul.appendChild(li)
-    }
+    li.appendChild(document.createTextNode(inputElement.value))
+    ul.appendChild(li)
     inputElement.value = ''
 }
 function deleteTask(){
