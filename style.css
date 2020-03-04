@@ -34,7 +34,7 @@ footer{
 div#input, #main, #delete{
     text-align: center;
 }
-button#insert{
+button{
     font-family: 'Raleway','Roboto', sans-serif;
     width: auto;
     height: auto;
