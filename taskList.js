@@ -12,9 +12,7 @@ function insertTask(){
         list.push(inputElement)//insert on the list
         }
 
-    for(var i in list){
-        console.log(list[i].value)
-    }
+    
 
     //incluindo no html
     var ul = document.getElementById('list')//creating list
@@ -29,9 +27,17 @@ function insertTask(){
 
     //atribuindo childs
     li.appendChild(checkbox);
-    li.appendChild(document.createTextNode(inputElement.value))
-    ul.appendChild(li)
-
+    if(inputElement.value.length >=27){
+        var init = inputElement.value.slice(0,26) 
+        var sub = inputElement.value.slice(26)
+        li.appendChild(document.createTextNode(init + "-"))
+        li.appendChild(document.createElement("br"))
+        li.appendChild(document.createTextNode(sub))
+        ul.appendChild(li)
+    }else{
+        li.appendChild(document.createTextNode(inputElement.value))
+        ul.appendChild(li)
+    }
     inputElement.value = ''
 }
 function deleteTask(){
