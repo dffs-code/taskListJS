@@ -52,7 +52,3 @@ function deleteTask(){
         alert("Operação Cancelada")
     }
 }
-
-$(document).ready(function() {
-    $('#button').draggable();
-  });

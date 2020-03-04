@@ -54,18 +54,3 @@ div#center{
     width: 300px;
     height: auto;
 }
-
-#button {
-    position: relative;
-    height: 40px;
-    width: 80px;
-    background-color: rgb(240, 137, 137);
-    border:thin solid rgb(206, 31, 31);
-    color: rgb(255, 255, 255);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.11);
-    text-align: center;
-    border-radius: 8px;
-    font-weight: bold;
-    line-height: 35px;    
-    margin: auto;
-}
